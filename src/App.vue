@@ -1,15 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <main class="app-content">
+    <drum-box />
+  </main>
+  <footer class="app-footer">
+    <p>
+      Made by <a
+        href="https://github.com/shaman771"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >shaman771</a> with fun, green tea and Vue 3
+    </p>
+    <p>
+      Photo by <a href="https://unsplash.com/@micrinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Dobrinski</a>
+      on <a href="https://unsplash.com/s/photos/drum?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </p>
+  </footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import DrumBox from '@/components/DrumBox';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    DrumBox
   }
 }
 </script>
@@ -19,8 +33,40 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-size: 1rem;
+  display: grid;
+  grid-template-rows: auto 6em;
+  height: 100vh;
+  background: url("./assets/drumming.jpg");
+  background-size: cover;
 }
+
+.app-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+
+  > * + * {
+    margin-left: 0.5em;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.app-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > * {
+    flex: 1;
+  }
+}
+
+
 </style>
