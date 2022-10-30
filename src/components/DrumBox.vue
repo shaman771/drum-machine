@@ -33,7 +33,7 @@
 
 <script>
 import DrumPad from '@/components/DrumPad';
-import {padConfig} from '@/assets/pad-config';
+import {padConfig} from '@/pad-config';
 import {onMounted, onUnmounted, ref} from 'vue';
 import VolumeMeter from '@/components/VolumeMeter';
 import useAudio from '@/composables/useAudio';
@@ -54,10 +54,11 @@ export default {
     }
 
     function handleKeydown(evt) {
-      const isExpectedKey = expectedKeys.includes(evt.key);
+      const keyId = evt.key.toUpperCase();
+      const isExpectedKey = expectedKeys.includes(keyId);
 
       if (isExpectedKey) {
-        const btn = document.querySelector(`#${evt.key}`);
+        const btn = document.querySelector(`#btn-${keyId}`);
         if (btn) {
           btn.click();
           btn.classList.add('clicked');

@@ -1,0 +1,65 @@
+export const padConfig = [
+  {
+    id: 'open_hh',
+    label: 'Open High Hat',
+    key: 'Q',
+    color: '#18e8ea',
+    source: require('./assets/samples/open-high-hat.mp3'),
+  },
+  {
+    id: 'close_hh',
+    label: 'Close High Hat',
+    key: 'W',
+    color: '#17c3f3',
+    source: require('./assets/samples/close-high-hat.mp3'),
+  },
+  {
+    id: 'clap',
+    label: 'Clap',
+    key: 'E',
+    color: '#5d99f1',
+    source: require('./assets/samples/clap.mp3'),
+  },
+  {
+    id: 'heater_1',
+    label: 'Heater 1',
+    key: 'A',
+    color: '#f4f420',
+    source: require('./assets/samples/heater-1.mp3'),
+  },
+  {
+    id: 'heater_2',
+    label: 'Heater 2',
+    key: 'S',
+    color: '#a0f14e',
+    source: require('./assets/samples/heater-2.mp3'),
+  },
+  {
+    id: 'heater_3',
+    label: 'Heater 3',
+    key: 'D',
+    color: '#4df353',
+    source: require('./assets/samples/heater-3.mp3'),
+  },
+  {
+    id: 'kick',
+    label: 'Kick',
+    key: 'Z',
+    color: '#f14946',
+    source: require('./assets/samples/kick.mp3'),
+  },
+  {
+    id: 'kick_hat',
+    label: 'Kick and Hat',
+    key: 'X',
+    color: '#f1853c',
+    source: require('./assets/samples/kick-n-hat.mp3'),
+  },
+  {
+    id: 'heater_4',
+    label: 'Heater 4',
+    key: 'C',
+    color: '#f4a224',
+    source: require('./assets/samples/heater-4.mp3'),
+  }
+];

@@ -29,6 +29,10 @@ export default {
 </script>
 
 <style lang="scss">
+:root {
+  --pad-shadow-color: #18e8ea;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
