@@ -126,6 +126,14 @@ export default {
   align-items: center;
   justify-content: space-evenly;
   margin-top: 2em;
+
+  @media screen and (max-width: 512px) {
+    flex-direction: column;
+
+    > * + * {
+      margin-top: 0.5em;
+    }
+  }
 }
 
 .display {
@@ -138,6 +146,10 @@ export default {
   color: #463b2e;
   box-shadow: 0 0 6px 0 #fff;
   min-height: 1.25em;
+
+  @media screen and (max-width: 512px) {
+    width: 90%;
+  }
 }
 
 </style>

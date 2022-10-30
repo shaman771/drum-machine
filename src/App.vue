@@ -39,7 +39,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
   display: grid;
-  grid-template-rows: auto 6em;
+  grid-template-rows: auto 3em;
   height: 100vh;
   background: url("./assets/drumming.jpg");
   background-size: cover;
@@ -50,6 +50,16 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 0 2em;
+  background-color: rgba(128,128,128,0.3);
+  color: #a6a6a6;
+
+  p {
+    font-size: 0.875em;
+  }
+
+  a {
+    color: inherit;
+  }
 
   > * + * {
     margin-left: 0.5em;
@@ -59,6 +69,10 @@ export default {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
+    p {
+      margin: 0;
+    }
   }
 }
 
