@@ -54,11 +54,11 @@ export default {
     }
 
     function handleKeydown(evt) {
-      const keyId = evt.key.toUpperCase();
+      const keyId = evt.key;
       const isExpectedKey = expectedKeys.includes(keyId);
 
       if (isExpectedKey) {
-        const btn = document.querySelector(`#btn-${keyId}`);
+        const btn = document.querySelector(`#btn-${keyId.toUpperCase()}`);
         if (btn) {
           btn.click();
           btn.classList.add('clicked');
